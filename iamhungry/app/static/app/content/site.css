@@ -1,0 +1,93 @@
+﻿body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+.logo {
+	float: left;
+	padding-top: 8px;
+}
+
+/*suggest-food*/
+p.rest-info a {
+	text-decoration: none;
+	font-family: "proxima_nova_bold",arial,tahoma,verdana;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 16px;
+	color: #434343;
+}
+
+.star {
+	background: url("../images/menulog_sprite_v1.png") no-repeat top left;
+}
+
+.green-star-full,
+.green-star-half,
+.green-star-empty {
+	height: 14px;
+	width: 14px;
+}
+
+.green-star-full {
+	background-position: 0 -622px;
+	background-position-x: 0;
+	background-position-y: -622px;
+}
+
+.green-star-half {
+	background-position: 0 -641px;
+}
+
+.green-star-empty {
+	background-position: 0 -603px;
+}
+/*Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+	max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+	color: #b94a48;
+}
+
+.field-validation-valid {
+	display: none;
+}
+
+input.input-validation-error {
+	border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+	border: 0 none;
+}
+
+.validation-summary-errors {
+	color: #b94a48;
+}
+
+.validation-summary-valid {
+	display: none;
+}
+
+/* footer css */
+footer {
+	min-height: 104px;
+	background-color:;
+	font-size: 11px;
+	width: 100%;
+	color: #f8f8f8;
+	padding-bottom: 20px;
+	clear: both;
+	position: relative;
+	overflow: visible;
+}

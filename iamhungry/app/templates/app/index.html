@@ -1,0 +1,217 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron text-center" style="position: relative; display:block; margin-top: 75px;">
+    <span style="position:absolute; font-size: 12px; left: 25px; top: 10px;">If you know the restaurant name you have visited, please clieck <a href="">here</a></span>
+    <p class="lead">Pick a restaurant > Order a takeaway > Your food is delivered</p>
+	<form role="form" class="form-inline">
+		<div class="form-group">
+			<label for="suburb-code">I am living in</label>
+			<input type="text" class="form-control" id="suburb-code" placeholder="Enter your suburb code">
+		</div>
+		<div class="form-group">
+			<label for="food-type">I am hungry for</label>
+			<select class="form-control" id="food-type" name="food-type">
+				<option value="">Show everything</option>
+				<optgroup label="Most popular cuisines">
+					<option value="indian">Indian</option>
+					<option value="pizza">Pizza</option>
+					<option value="chinese">Chinese</option>
+					<option value="kebabs">Kebab</option>
+					<option value="italian">Italian</option>
+					<option value="fish-and-chips">Fish &amp; Chips</option>
+					<option value="american">American</option>
+					<option value="chicken">Chicken</option>
+				</optgroup>
+				<optgroup label="Other cuisines">
+					<option value="curry">Curry</option>
+					<option value="bangladeshi">Bangladeshi</option>
+					<option value="thai">Thai</option>
+					<option value="english">English</option>
+					<option value="turkish">Turkish</option>
+					<option value="burgers">Burgers</option>
+					<option value="peri-peri">Peri Peri</option>
+					<option value="caribbean">Caribbean</option>
+					<option value="japanese">Japanese</option>
+					<option value="grill">Grill</option>
+					<option value="sandwiches">Sandwiches</option>
+					<option value="lebanese">Lebanese</option>
+					<option value="sushi">Sushi</option>
+					<option value="breakfast">Breakfast</option>
+					<option value="mexican">Mexican</option>
+					<option value="mediterranean">Mediterranean</option>
+					<option value="pakistani">Pakistani</option>
+					<option value="nepalese">Nepalese</option>
+					<option value="desserts">Desserts</option>
+					<option value="oriental">Oriental</option>
+					<option value="jamaican">Jamaican</option>
+					<option value="african">African</option>
+					<option value="healthy">Healthy</option>
+					<option value="british">British</option>
+					<option value="middle-eastern">Middle Eastern</option>
+					<option value="portuguese">Portuguese</option>
+					<option value="south-indian">South Indian</option>
+					<option value="greek">Greek</option>
+					<option value="cakes">Cakes</option>
+					<option value="persian">Persian</option>
+					<option value="malaysian">Malaysian </option>
+					<option value="milkshakes">Milkshakes</option>
+					<option value="new">*NEW*</option>
+					<option value="vietnamese">Vietnamese</option>
+					<option value="sri-lankan">Sri-lankan</option>
+					<option value="subways">Subways</option>
+					<option value="afghanistani">Afghanistani</option>
+					<option value="drinks">Drinks</option>
+					<option value="spanish">Spanish</option>
+					<option value="iranian">Iranian</option>
+					<option value="nigerian">Nigerian</option>
+					<option value="vegetarian">Vegetarian</option>
+					<option value="pasta">Pasta</option>
+					<option value="gourmet">Gourmet</option>
+					<option value="Moroccan">Moroccan</option>
+					<option value="european">European</option>
+					<option value="korean">Korean </option>
+					<option value="dim-sum">Dim Sum</option>
+					<option value="arabic">Arabic</option>
+					<option value="wraps">Wraps</option>
+					<option value="brazilian-food">Brazilian food</option>
+					<option value="french">French</option>
+					<option value="polish">Polish</option>
+					<option value="retro-sweets">Retro Sweets</option>
+					<option value="russian">Russian</option>
+					<option value="west-african">West African</option>
+					<option value="sweets">Sweets</option>
+					<option value="seafood">Seafood</option>
+					<option value="kurdish">Kurdish</option>
+					<option value="egyptian">Egyptian</option>
+					<option value="streetfood">Street Food</option>
+					<option value="roast-dinners">Roast Dinners</option>
+					<option value="kosher">Kosher</option>
+					<option value="brunch">Brunch</option>
+					<option value="bagels">Bagels</option>
+					<option value="eastern-european">Eastern European</option>
+					<option value="bulgarian">Bulgarian</option>
+					<option value="indonesian">Indonesian</option>
+					<option value="punjabi">Punjabi</option>
+					<option value="smoothies">Smoothies</option>
+					<option value="syrian">Syrian</option>
+					<option value="tapas">Tapas</option>
+					<option value="mongolian">Mongolian</option>
+					<option value="ethiopian">Ethiopian</option>
+					<option value="australian">Australian</option>
+					<option value="azerbaijan">Azerbaijan</option>
+					<option value="argentinian">Argentinian</option>
+					<option value="bubble-tea">Bubble Tea</option>
+					<option value="burritos">Burritos</option>
+					<option value="filipino">Filipino</option>
+					<option value="danish">Danish</option>
+					<option value="crepes">Crepes</option>
+					<option value="low-carb">Low-Carb</option>
+					<option value="hungarian">Hungarian</option>
+					<option value="ghanaian">Ghanaian</option>
+					<option value="ukrainian">Ukrainian</option>
+					<option value="vegan">Vegan</option>
+					<option value="southafrican">South African</option>
+					<option value="salads">Salads</option>
+				</optgroup>
+			</select>
+		</div>
+	    <button type="submit" class="btn btn-default" style="margin-top: 57px;">Submit</button>
+	</form>
+</div>
+<div class="suggest-food"><h2>Some of Our Suggestions</h2></div>
+<div class="row">
+    <div class="col-md-2">
+        <h2 style="height: 100px;"><a href=""><img src="http://d3ixfq93fs5x5p.cloudfront.net/generated_content/venue_images/takeaway_home_thumb/155691_d13852fec2cf90a05febea89341b5f53/150x100xthai6.jpeg.pagespeed.ic.oBLAPef5pf.webp" class="img-thumbnail"/></a></h2>
+        <p class="rest-info">
+            <div><a href=" ">Oz Fuss Cafe and Restaurant</a></div>
+            <div>Newtown NSW</div>
+        </p>
+        <ul class="list-inline">
+            <li style="padding-left:0;">16 reviews</li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-half"></li>
+        </ul>
+    </div>
+        <div class="col-md-2">
+        <h2 style="height: 100px;"><a href=""><img src="http://d3ixfq93fs5x5p.cloudfront.net/generated_content/venue_images/takeaway_home_thumb/155691_d13852fec2cf90a05febea89341b5f53/150x100xthai6.jpeg.pagespeed.ic.oBLAPef5pf.webp" class="img-thumbnail"/></a></h2>
+        <p class="rest-info">
+            <div><a href=" ">Oz Fuss Cafe and Restaurant</a></div>
+            <div>Newtown NSW</div>
+        </p>
+        <ul class="list-inline">
+            <li style="padding-left:0;">16 reviews</li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-half"></li>
+        </ul>
+    </div>
+        <div class="col-md-2">
+        <h2 style="height: 100px;"><a href=""><img src="http://d3ixfq93fs5x5p.cloudfront.net/generated_content/venue_images/takeaway_home_thumb/155691_d13852fec2cf90a05febea89341b5f53/150x100xthai6.jpeg.pagespeed.ic.oBLAPef5pf.webp" class="img-thumbnail"/></a></h2>
+        <p class="rest-info">
+            <div><a href=" ">Oz Fuss Cafe and Restaurant</a></div>
+            <div>Newtown NSW</div>
+        </p>
+        <ul class="list-inline">
+            <li style="padding-left:0;">16 reviews</li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-half"></li>
+        </ul>
+    </div>
+        <div class="col-md-2">
+        <h2 style="height: 100px;"><a href=""><img src="http://d3ixfq93fs5x5p.cloudfront.net/generated_content/venue_images/takeaway_home_thumb/155691_d13852fec2cf90a05febea89341b5f53/150x100xthai6.jpeg.pagespeed.ic.oBLAPef5pf.webp" class="img-thumbnail"/></a></h2>
+        <p class="rest-info">
+            <div><a href=" ">Oz Fuss Cafe and Restaurant</a></div>
+            <div>Newtown NSW</div>
+        </p>
+        <ul class="list-inline">
+            <li style="padding-left:0;">16 reviews</li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-half"></li>
+        </ul>
+    </div>
+        <div class="col-md-2">
+        <h2 style="height: 100px;"><a href=""><img src="http://d3ixfq93fs5x5p.cloudfront.net/generated_content/venue_images/takeaway_home_thumb/155691_d13852fec2cf90a05febea89341b5f53/150x100xthai6.jpeg.pagespeed.ic.oBLAPef5pf.webp" class="img-thumbnail"/></a></h2>
+        <p class="rest-info">
+            <div><a href=" ">Oz Fuss Cafe and Restaurant</a></div>
+            <div>Newtown NSW</div>
+        </p>
+        <ul class="list-inline">
+            <li style="padding-left:0;">16 reviews</li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-half"></li>
+        </ul>
+    </div>
+        <div class="col-md-2">
+        <h2 style="height: 100px;"><a href=""><img src="http://d3ixfq93fs5x5p.cloudfront.net/generated_content/venue_images/takeaway_home_thumb/155691_d13852fec2cf90a05febea89341b5f53/150x100xthai6.jpeg.pagespeed.ic.oBLAPef5pf.webp" class="img-thumbnail"/></a></h2>
+        <p class="rest-info">
+            <div><a href=" ">Oz Fuss Cafe and Restaurant</a></div>
+            <div>Newtown NSW</div>
+        </p>
+        <ul class="list-inline">
+            <li style="padding-left:0;">16 reviews</li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-full"></li>
+            <li class="star green-star-half"></li>
+        </ul>
+    </div>
+</div>
+
+{% endblock %}
